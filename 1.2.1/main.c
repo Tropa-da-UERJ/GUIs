@@ -7,7 +7,7 @@ int main (int argc, char* args[])
     SDL_Window* win = SDL_CreateWindow("Desenho 1.2.1!",
                          SDL_WINDOWPOS_UNDEFINED,
                          SDL_WINDOWPOS_UNDEFINED,
-                         700, 700, SDL_WINDOW_SHOWN
+                         500, 500, SDL_WINDOW_SHOWN
                       );
     SDL_Renderer* ren = SDL_CreateRenderer(win, -1, 0);
 
@@ -24,8 +24,11 @@ int main (int argc, char* args[])
     SDL_Rect r3 = { 150,150, 200,5 };
     SDL_RenderFillRect(ren, &r3);
     SDL_SetRenderDrawColor(ren, 0x13,0x17,0x22,0x00);
-    SDL_Rect r4 = { 500,600, 100,70 };
+    SDL_Rect r4 = { 200,300, 100,20 };
     SDL_RenderFillRect(ren, &r4);
+    SDL_SetRenderDrawColor(ren, 0x69,0x3e,0x45,0x00);
+    SDL_Rect r5 = { 100,300, 60,50 };
+    SDL_RenderFillRect(ren, &r5);
     SDL_RenderPresent(ren);
     SDL_Delay(5000);
 
