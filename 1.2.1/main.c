@@ -29,6 +29,9 @@ int main (int argc, char* args[])
     SDL_SetRenderDrawColor(ren, 0x69,0x3e,0x45,0x00);
     SDL_Rect r5 = { 100,300, 60,50 };
     SDL_RenderFillRect(ren, &r5);
+    SDL_SetRenderDrawColor(ren, 0xe3,0x0b,0x0b,0x00);
+    SDL_Rect ponto = { 120,80, 3,3 };
+    SDL_RenderFillRect(ren, &ponto);
     SDL_RenderPresent(ren);
     SDL_Delay(5000);
 
